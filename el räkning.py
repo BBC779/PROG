@@ -30,8 +30,8 @@ end_date = datetime.datetime (end_year, end_month, end_day)
 date_diff = (end_date - start_date).days
 print(date_diff)
 
-meter_start = input("elmätarens startvärde:")
-meter_end = input("elmätarens slutvärde:")
+meter_start = input("Skriv elmätarens startvärde:")
+meter_end = input("Skriv elmätarens slutvärde:")
 meter_start = int (meter_start)
 meter_end = int (meter_end)
 
@@ -45,4 +45,4 @@ kwh = float (kwh_price)
 
 total_price = (date_diff * day_fee + consumed * kwh_price) * 1.25
 
-print("Total pris efter skatt:", total_price)
+print("Dett totala priset efter skatt:", total_price)
