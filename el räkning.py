@@ -1,26 +1,26 @@
 import datetime
 
-print("Skriv start året")
+print("Skriv start året nu")
 start_year = input()
 start_year = int()
 
-print("Skriv start månaden")
+print("Skriv start månaden nu")
 start_month = input()
 start_month = int(start_month)
 
-print("Skriv slut året")
-end_year = input()
-end_year = int(end_year)
-
-print("Skriv slut månaden")
-end_month = input()
-end_month = int(end_month)
-
-print("Skriv start dagen")
+print("Skriv start dagen nu")
 start_day = input()
 start_day = int(start_day)
 
-print("Skriv slut dagen")
+print("Skriv slut året nu")
+end_year = input()
+end_year = int(end_year)
+
+print("Skriv slut månaden nu")
+end_month = input()
+end_month = int(end_month)
+
+print("Skriv slut dagen nu")
 end_day = input()
 end_day = int(end_day)
 
