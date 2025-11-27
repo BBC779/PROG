@@ -14,13 +14,13 @@ while True:
         print("Ditt betyg är E")
 
     elif procent < 70:
-        print("Dittbetyg är D")
+        print("Ditt betyg är D")
 
     elif procent < 80:
-        print("Ditt bedyg är C")
+        print("Ditt betyg är C")
         
     elif procent < 90:
-        print("Ditt bedyg är B")
+        print("Ditt betyg är B")
 
     elif procent < 100:
         print("Ditt betyg är A")
