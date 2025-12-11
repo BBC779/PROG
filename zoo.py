@@ -1,10 +1,10 @@
 zoo = {
     "Savana": [
-        {"art": "Lejon", "namn": "Simba", "happiness": 50, "age": 5},
-        {"art": "Elefant", "namn": "Dumbo", "happiness": 70, "age": 12}
+        {"art": "Lejon", "namn": "Simba", "Glädje": 50, "Ålder": 5},
+        {"art": "Elefant", "namn": "Dumbo", "Glädje": 70, "Ålder": 12}
     ],
     "Regnskog": [
-        {"art": "Apa", "namn": "Koko", "happiness": 60, "age": 7}
+        {"art": "Apa", "namn": "kalle", "Glädje": 60, "Ålder": 7}
     ]
 }
 
@@ -26,9 +26,9 @@ while True:
 
         if område in zoo:
             for djur in zoo[område]:
-                print(djur["namn"], djur["art"], "Happiness:", djur["happiness"], "Age:", djur["age"])
+                print(djur["namn"], djur["art"], "Glädje:", djur["Glädje"], "Ålder:", djur["Ålder"])
         else:
-            print("Området finns inte.")
+            print("Området finns ej.")
 
     elif val == "2":
         område = input("Vilket område?: ")
@@ -38,18 +38,18 @@ while True:
 
         art = input("Art: ")
         namn = input("Namn: ")
-        happiness = int(input("Happiness: "))
-        age = int(input("Ålder: "))
+        gjädje = int(input("Glädje: "))
+        ålder = int(input("Ålder: "))
 
-        zoo[område].append({"art": art, "namn": namn, "happiness": happiness, "age": age})
-        print("Djuret är tillagt.")
+        zoo[område].append({"art": art, "namn": namn, "Glädje": gjädje, "Ålder": ålder})
+        print("Djuret har .")
 
     elif val == "3":
         print("Områden:")
         for område in zoo:
             print(område)
 
-        område = input("Välj område att hälsa på: ")
+        område = input("Vart vill du hälsa på: ")
 
         if område in zoo:
             print("1. Mata\n2. Lek\n3. Städa")
@@ -57,12 +57,12 @@ while True:
 
             if handling in ["1", "2", "3"]:
                 for djur in zoo[område]:
-                    djur["happiness"] += 10
-                print("Djurens happiness ökade.")
+                    djur["Glädje"] += 10
+                print("Djurens Glädje ökade.")
             else:
-                print("Fel val.")
+                print("Error.")
         else:
-            print("Området finns inte.")
+            print("Området finns ej.")
 
     elif val == "4":
         alla = []
@@ -73,16 +73,16 @@ while True:
         if len(alla) == 0:
             print("Inga djur finns.")
         else:
-            gladast = max(alla, key=lambda d: d["happiness"])
-            aldst = max(alla, key=lambda d: d["age"])
+            gladast = max(alla, key=lambda d: d["Glädje"])
+            aldst = max(alla, key=lambda d: d["Ålder"])
 
             print("Antal djur:", len(alla))
-            print("Gladast:", gladast["namn"], gladast["happiness"])
-            print("Äldst:", aldst["namn"], aldst["age"])
+            print("Gladast:", gladast["namn"], gladast["Glädje"])
+            print("Äldst:", aldst["namn"], aldst["Ålder"])
 
     elif val == "5":
         print("Hejdå!")
         break
 
     else:
-        print("Fel val!")
+        print("Error")
