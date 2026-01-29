@@ -16,9 +16,9 @@ def spela(val):
 ui.label("Välj ett drag:").classes('text-xl mb-4')
 
 with ui.row():
-    ui.button("Sten",on_click=lambda: spela("Sten"))
-    ui.button("Sax",on_click=lambda: spela ("Sax"))
-    ui.button("Påse",on_click=lambda: spela ("Påse"))
+    ui.button("Sten",on_click=lambda: spela("Sten")).classes('text-lg').props("flat").style("color:black !important;")
+    ui.button("Sax",on_click=lambda: spela ("Sax")).classes('text-lg').props("flat").style("color:black !important;")
+    ui.button("Påse",on_click=lambda: spela ("Påse")).classes('text-lg').props("flat").style("color:black !important;")
 
 resultat=ui.label("Lycka till!").classes('mt-4 font-bold')
 
