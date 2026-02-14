@@ -1,0 +1,11 @@
+{
+    "news_sources": [
+        "https://news.google.com/rss",
+        "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+    ],
+    "wikipedia_topics": [
+        "Artificial intelligence",
+        "Python (programming language)"
+    ],
+    "scrape_frequency_minutes": 1
+}

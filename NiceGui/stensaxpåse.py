@@ -5,11 +5,11 @@ def spela(val):
     val_lista=["Sten","Sax","Påse"]
     datorn = random.choice(val_lista)
     if val==datorn:
-        resultat.text=f"Oavgjort!Båda valde{val}."
+        resultat.text=f"Oavgjort! Båda valde{val}."
     elif(val=="Sten" and datorn == "Sax") or \
         (val=="Sax" and datorn == "Påse") or \
         (val=="Påse" and datorn == "Sten"):
-        resultat.text=f"Du vann!{val} slår {datorn}."
+        resultat.text=f"Du vann! {val} slår {datorn}."
     else:
         resultat.text=f"Datorn vann! {datorn} slår {val}."
 
